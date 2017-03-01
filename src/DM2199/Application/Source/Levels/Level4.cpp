@@ -1069,7 +1069,7 @@ void Level4::Init()
     soundStorage.push_back(new Sound("gunshot.mp3", 1000, 1));
     soundStorage.push_back(new Sound("splatter.mp3", 1000, 1));
     soundStorage.push_back(new Sound("run.mp3", 1000, 0.5));
-    soundStorage.push_back(new Sound("backgroundmusic.mp3"));
+    soundStorage.push_back(new Sound("background4.mp3"));
     soundStorage.push_back(new Sound("jump.mp3", 1000, 0.5));
     soundStorage.push_back(new Sound("footstep.mp3", 1000, 1));
 
@@ -1108,7 +1108,7 @@ void Level4::Init()
     {
         (*it)->_Position = (*it)->currWaypoint->getPosition();
     }
-
+	soundStorage[3]->play2DSound(false, false, false);
     SceneLose::setRetry(8);
 }
 

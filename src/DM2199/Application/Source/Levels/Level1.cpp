@@ -1091,6 +1091,8 @@ void Level1::Init()
     {
         (*it)->_Position = (*it)->currWaypoint->getPosition();
     }
+
+	soundStorage[3]->play2DSound(false, false, false);
 }
 
 void Level1::objectsInit()

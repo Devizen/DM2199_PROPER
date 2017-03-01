@@ -1170,6 +1170,8 @@ void Level2::Init()
 	soundStorage[3]->play2DSound(false, false, false);
 
 	Camera3::collisionSwitch(true, "level2.txt");
+
+	
 }
 
 void Level2::objectsInit()
@@ -1556,6 +1558,34 @@ void Level2::Update(double dt)
     {
         resetAll();
     }
+
+	delay += (float)dt;
+
+	offSetX = Math::RandFloatMinMax(-500.f, 500.f);
+	offSetZ = Math::RandFloatMinMax(-500.f, 500.f);
+
+	if (delay > 5.f)
+	{
+		delay = 5.f;
+	}
+
+
+	/*
+	if (delay >= 5.f)
+	{
+	offSetX += 10;
+	offSetZ += 10;
+	Enemy * newEnemy4 = new Robot(70.f, 5.f, 50.f, 100.f,5);
+
+	newEnemy4->addWaypoint(Vector3(offSetX, 0, offSetZ));
+	newEnemy4->addWaypoint(Vector3(offSetX + 20, 0, offSetZ));
+	newEnemy4->addWaypoint(Vector3(offSetX + 20, 0, offSetZ + 20));
+	newEnemy4->addWaypoint(Vector3(offSetX, 0, offSetZ + 20));
+	enemyStorage.push_back(newEnemy4);
+	delay = 0.f;
+
+
+	}*/
 
     camera.Update(dt);
 

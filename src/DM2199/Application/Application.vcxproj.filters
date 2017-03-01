@@ -156,7 +156,7 @@
     <ClCompile Include="Source\SceneLose.cpp">
       <Filter>Source Files\Scenes</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Yoong Soon\Application\Source\Scene.cpp">
+    <ClCompile Include="Source\Scene.cpp">
       <Filter>Source Files\Scenes</Filter>
     </ClCompile>
   </ItemGroup>
