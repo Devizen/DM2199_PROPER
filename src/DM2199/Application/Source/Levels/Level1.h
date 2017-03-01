@@ -148,6 +148,12 @@ private:
 
     //Render objects.
     void renderObjects();
+
+	//Energy / Time
+	int energy = 10000;
+	int timeleft = 60000;
+	int maxenergy = energy;
+	int maxtime = timeleft;
 };
 
 #endif

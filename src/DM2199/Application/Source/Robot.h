@@ -12,6 +12,7 @@ public:
 		chasing,
 		death,
 		escaping,
+		attack,
 	};
 
 
@@ -48,6 +49,11 @@ public:
 	//Get DT
 	static void dtFromScene(double dt);
 	static void positionFromCamera(Camera3 pos);
+
+	//Jumping
+	bool jump = false;
+	bool fall = false;
+	float jumpHeight = 20;
 
 private:
 	robotState _State;

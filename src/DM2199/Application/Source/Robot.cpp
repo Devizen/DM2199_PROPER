@@ -19,95 +19,216 @@ Robot::Robot(float speed, float damage, float hp, float range, int typeRobot)
 
 void Robot::update()
 {
-	if (_Hp <= 0)
+	if (robotType != 5)
 	{
-		_State = death;
-	}
-
-	switch (_State)
-	{
-	case patrolling:
-	{
-		movetoWaypoint(copyDT); //  move from one waypoint to another ,return to current waypoint
-		//  after character goes out of range
-		/*cout << "Position: " << _Position << endl;*/
-
-		if ((_Position - copyPos.getPosition()).Length() < getRange() && _Hp >25)
+		if (_Hp <= 0)
 		{
-			_State = Robot::robotState::chasing;
+			_State = death;
 		}
-	}
-	break;
-	case chasing:
-	{
-		//distance between character and  enemy
-		Vector3 distance = (_Position - copyPos.position);
-		 unitDistance = distance.Normalized();
-		/*   try
-		   {*/
-		//unitDistance = distance.Normalized();
-		//}
-		//catch (DivideByZero what)
-		//{
-		//    /*cout << what.what() << endl;*/
-		//}
 
-		float moveX = unitDistance.x * getMovementSpeed()* (float)copyDT;
-		float moveZ = unitDistance.z * getMovementSpeed()*  (float)copyDT;
-
-		// Rotate the enemy towards the player
-		_Rotation = -Math::RadianToDegree(atan2(distance.z, distance.x));
-
-		// Move the Enemy
-		if ((_Position - copyPos.position).Length() > 10)
+		switch (_State)
 		{
+		case patrolling:
+		{
+			movetoWaypoint(copyDT); //  move from one waypoint to another ,return to current waypoint
+			//  after character goes out of range
+			/*cout << "Position: " << _Position << endl;*/
+
+			if ((_Position - copyPos.getPosition()).Length() < getRange() && _Hp > 25)
+			{
+				_State = Robot::robotState::chasing;
+			}
+		}
+		break;
+		case chasing:
+		{
+			//distance between character and  enemy
+			Vector3 distance = (_Position - copyPos.position);
+			Vector3 unitDistance = distance.Normalized();
+			/*   try
+			{*/
+			//unitDistance = distance.Normalized();
+			//}
+			//catch (DivideByZero what)
+			//{
+			//    /*cout << what.what() << endl;*/
+			//}
+
+			float moveX = unitDistance.x * getMovementSpeed()* (float)copyDT;
+			float moveZ = unitDistance.z * getMovementSpeed()*  (float)copyDT;
+
+			// Rotate the enemy towards the player
+			_Rotation = -Math::RadianToDegree(atan2(distance.z, distance.x));
+
+			// Move the Enemy
+
 			_Position.x -= moveX;
 			_Position.z -= moveZ;
-		}
 
-		if ((_Position - copyPos.getPosition()).Length() > getRange())
-		{
-			_State = Robot::robotState::patrolling;
+
+			if ((_Position - copyPos.getPosition()).Length() > getRange())
+			{
+				_State = Robot::robotState::patrolling;
+			}
+			else if (_Hp <= 25)
+			{
+				_State = Robot::robotState::escaping;
+			}
 		}
-		else if (_Hp <= 25)
+		break;
+		case death:
 		{
-			_State = Robot::robotState::escaping;
+
+		}
+		break;
+		case escaping:
+		{
+			//distance between character and  enemy
+			Vector3 distance = (_Position - copyPos.getPosition());
+			Vector3 unitDistance = distance.Normalized();
+
+			float moveX = unitDistance.x * getMovementSpeed()*float(copyDT);
+			float moveZ = unitDistance.z * getMovementSpeed()*float(copyDT);
+
+			// Rotate the enemy towards the player
+			/*_Rotation = Math::RadianToDegree(atan2(distance.z, distance.x));
+			*/
+			// Move the Enemy
+			if ((_Position - copyPos.getPosition()).Length() < getRange())
+			{
+				_Position.x += moveX;
+				_Position.z += moveZ;
+			}
+			else
+			{
+				_State = Robot::robotState::patrolling;
+			}
+
+
+		}
+		break;
 		}
 	}
-	break;
-	case death:
+	else
 	{
-		
-	}
-	break;
-	case escaping:
-	{
-		//distance between character and  enemy
-		Vector3 distance = (_Position - copyPos.getPosition());
-		Vector3 unitDistance = distance.Normalized();
-
-		float moveX = unitDistance.x * getMovementSpeed()*float(copyDT);
-		float moveZ = unitDistance.z * getMovementSpeed()*float(copyDT);
-
-		// Rotate the enemy towards the player
-		/*_Rotation = Math::RadianToDegree(atan2(distance.z, distance.x));
-*/
-		// Move the Enemy
-		if ((_Position - copyPos.getPosition()).Length() < getRange())
+		switch (_State)
 		{
-			_Position.x += moveX;
-			_Position.z += moveZ;
-		}
-		else
+		case patrolling:
 		{
-			_State = Robot::robotState::patrolling;
+
+			movetoWaypoint(copyDT); //  move from one waypoint to another ,return to current waypoint
+			//  after character goes out of range
+			jump = false;
+			fall = false;
+			if ((_Position - copyPos.getPosition()).Length() < getRange())
+
+				movetoWaypoint(copyDT); //  move from one waypoint to another ,return to current waypoint
+
+			//  after character goes out of range
+
+			if ((_Position - copyPos.getPosition()).Length() < getRange())
+
+			{
+				_State = Robot::robotState::chasing;
+			}
 		}
+		break;
+		case chasing:
+		{
+			//distance between character and  enemy
 
-	
-	}
-	break;
-	}
 
+			Vector3 distance = (_Position - copyPos.position);
+			Vector3 unitDistance;
+			try
+			{
+				unitDistance = distance.Normalized();
+			}
+			catch (DivideByZero what)
+			{
+
+			}
+
+			float moveX = unitDistance.x * getMovementSpeed()* copyDT;
+			float moveZ = unitDistance.z * getMovementSpeed()* copyDT;
+
+			// Rotate the enemy towards the player
+			_Rotation = -Math::RadianToDegree(atan2(distance.z, distance.x));
+
+			// Move the Enemy
+			_Position.x -= moveX;
+			_Position.z -= moveZ;
+
+
+			if ((_Position - copyPos.getPosition()).Length() > getRange())
+			{
+				_State = Robot::robotState::patrolling;
+			}
+
+			else if ((_Position - copyPos.getPosition()).Length() > (getRange() - 15))
+			{
+				_State = Robot::robotState::attack;
+			}
+
+		}
+		break;
+		case death:
+		{
+
+		}
+		break;
+		case attack:
+		{
+			//distance between character and  enemy
+			Vector3 distance = (_Position - copyPos.position);
+			Vector3 unitDistance = distance.Normalized();
+
+			float moveX = unitDistance.x * getMovementSpeed()* copyDT;
+			float moveZ = unitDistance.z * getMovementSpeed()*copyDT;
+
+
+			if ((_Position - copyPos.getPosition()).Length() > (getRange() - 15))
+				jump = true;
+
+			if (jump == true)
+			{
+				_Position.y += 1.f * (float)(getMovementSpeed()*copyDT);
+			}
+
+			if (_Position.y > jumpHeight)
+			{
+				jump = false;
+				fall = true;
+			}
+
+			if (fall == true)
+			{
+				_Position.y -= 1.f * (float)(getMovementSpeed()*copyDT);
+			}
+
+			if (_Position.y < 0)
+			{
+				_Position.y = 0;
+			}
+
+			// Rotate the enemy towards the player
+			_Rotation = -Math::RadianToDegree(atan2(distance.z, distance.x));
+
+			// Move the Enemy
+			if ((_Position - copyPos.position).Length() > 10)
+			{
+				_Position.x -= moveX;
+				_Position.z -= moveZ;
+			}
+
+			if ((_Position - copyPos.getPosition()).Length() > getRange())
+			{
+				_State = Robot::robotState::patrolling;
+			}
+		}
+		break;
+		}
+	}
 }
 
 

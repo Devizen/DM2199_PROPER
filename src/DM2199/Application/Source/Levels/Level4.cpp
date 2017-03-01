@@ -1145,6 +1145,11 @@ void Level4::objectsInit()
 
 void Level4::Update(double dt)
 {
+	//Delay for placing objects
+	static float pressDelay = 0.f;
+	//Delay for footstep sound
+	static float pressDelay2 = 0.f;
+
     static float mouseStart = 0.f;
     mouseStart += float(dt);
     if (mouseStart > 5.f)
@@ -1152,6 +1157,27 @@ void Level4::Update(double dt)
         Camera3::loadedCheck(true);
     }
     Camera3::collisionSwitch(true, "Level4.txt");
+
+	for (auto it1 = enemyStorage.begin(); it1 != enemyStorage.end(); it1++)
+	{
+		if ((*(it1 + 1)) != NULL)
+		{
+			for (auto it2 = it1 + 1; it2 != enemyStorage.end(); it2++)
+			{
+				if (((*it1)->_Position - (*it2)->_Position).Length() < 20 &&
+					(*it1)->getState() != 2 && (*it2)->getState() != 2)
+				{
+
+					DistanceBetween = ((*it1)->_Position - (*it2)->_Position).Normalized();
+					(*it1)->_Position += DistanceBetween;
+					(*it2)->_Position -= DistanceBetween;
+
+				}
+
+			}
+		}
+	}
+
     vec3df camPos = { camera.getPosition().x, camera.getPosition().y, camera.getPosition().z };
     Vector3 view = camera.target - camera.position;
     vec3df dir = { view.x, view.y, view.z };
@@ -1246,11 +1272,11 @@ void Level4::Update(double dt)
 
 
     //-------------------------------------------Torchlight-----------------------------------------
-    if (!Application::IsKeyPressed('Q'))
+    if (!Application::IsKeyPressed(MK_RBUTTON))
         canPress = true;
 
     // Light on
-    if (canPress && Application::IsKeyPressed('Q')) {
+    if (canPress && Application::IsKeyPressed(MK_RBUTTON)) {
         light[0].power = (light[0].power > 0) ? 0.0f : 10.0f; // Toggle Power between 0 and 2
         glUniform1f(m_parameters[U_LIGHT0_POWER], light[0].power);
         canPress = false;
@@ -1397,13 +1423,7 @@ void Level4::Update(double dt)
 		pressDelay2 = 1.f;
 	}
 
-	if (Application::IsKeyPressed(VK_SHIFT))
-		isRunning = true;
-	else
-		isRunning = false;
-
-	if (isRunning == false)
-	{
+	
 		if (Application::IsKeyPressed('W') && pressDelay2 >= 1.f)
 		{
 			pressDelay2 = 0.f;
@@ -1429,30 +1449,29 @@ void Level4::Update(double dt)
 			soundStorage[5]->play3DSound(false, false, true, footPos);
 		}
 
-	}
-	if (isRunning == true)
-	{
-		if (Application::IsKeyPressed(VK_SHIFT) && Application::IsKeyPressed('W') && pressDelay >= cooldownPressed)
+	
+	
+		if (Application::IsKeyPressed(VK_SHIFT) && Application::IsKeyPressed('W') && pressDelay >= 0.5f)
 		{
 			pressDelay = 0.f;
 			soundStorage[2]->play3DSound(false, false, true, footPos);
 		}
-		if (Application::IsKeyPressed(VK_SHIFT) && Application::IsKeyPressed('A') && pressDelay >= cooldownPressed)
+		if (Application::IsKeyPressed(VK_SHIFT) && Application::IsKeyPressed('A') && pressDelay >= 0.5f)
 		{
 			pressDelay = 0.f;
 			soundStorage[2]->play3DSound(false, false, true, footPos);
 		}
-		if (Application::IsKeyPressed(VK_SHIFT) && Application::IsKeyPressed('S') && pressDelay >= cooldownPressed)
+		if (Application::IsKeyPressed(VK_SHIFT) && Application::IsKeyPressed('S') && pressDelay >= 0.5f)
 		{
 			pressDelay = 0.f;
 			soundStorage[2]->play3DSound(false, false, true, footPos);
 		}
-		if (Application::IsKeyPressed(VK_SHIFT) && Application::IsKeyPressed('D') && pressDelay >= cooldownPressed)
+		if (Application::IsKeyPressed(VK_SHIFT) && Application::IsKeyPressed('D') && pressDelay >= 0.5f)
 		{
 			pressDelay = 0.f;
 			soundStorage[2]->play3DSound(false, false, true, footPos);
 		}
-	}
+	
 
 	//soundStorage[2]->play3DSound(false, false, true, footPos);
 
@@ -1714,7 +1733,7 @@ void Level4::renderEnemy()
 
             camera.health--;
 
-            if ((*it)->enemytype == 1)
+            if ((*it)->enemytype == 2)
             {
                 if (Math::RandIntMinMax(0, 100) < 10)
                 {

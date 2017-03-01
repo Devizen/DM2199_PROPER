@@ -47,7 +47,7 @@ public:
 	unsigned robotType = 0;  // <------ used to identify which TYPE of robot it is
 
 	float healthBarSpider = 10.f;
-	float healthBarRobot1 = 20.f;
+	float healthBarRobot1 = 15.f;
 };
 
 

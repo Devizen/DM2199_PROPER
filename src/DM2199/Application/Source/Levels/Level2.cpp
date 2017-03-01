@@ -992,6 +992,46 @@ void Level2::Init()
     light[2].exponent = 3.f;
     light[2].spotDirection.Set(0.f, 1.f, 0.f);
 
+
+
+	light[3].type = Light::LIGHT_POINT;
+	light[3].position.Set(-414.f, 0.f, 957.f);
+	light[3].color.Set(1.f, 0.43f, 0.78f);
+	light[3].power = 100.f;
+	light[3].kC = 1.f;
+	light[3].kL = 0.01f;
+	light[3].kQ = 0.001f;
+	light[3].cosCutoff = cos(Math::DegreeToRadian(45));
+	light[3].cosInner = cos(Math::DegreeToRadian(30));
+	light[3].exponent = 3.f;
+	light[3].spotDirection.Set(0.f, 1.f, 0.f);
+
+
+	light[4].type = Light::LIGHT_POINT;
+	light[4].position.Set(-415.f, 0.f, 954.f);
+	light[4].color.Set(0.13f, 0.37f, 0.31f);
+	light[4].power = 1.f;
+	light[4].kC = 1.f;
+	light[4].kL = 0.01f;
+	light[4].kQ = 0.001f;
+	light[4].cosCutoff = cos(Math::DegreeToRadian(45));
+	light[4].cosInner = cos(Math::DegreeToRadian(30));
+	light[4].exponent = 3.f;
+	light[4].spotDirection.Set(0.f, 1.f, 0.f);
+
+
+	light[5].type = Light::LIGHT_POINT;
+	light[5].position.Set(243.f, 0.f, 611.f);
+	light[5].color.Set(1.f, 0.43f, 0.78f);
+	light[5].power = 1.f;
+	light[5].kC = 1.f;
+	light[5].kL = 0.01f;
+	light[5].kQ = 0.001f;
+	light[5].cosCutoff = cos(Math::DegreeToRadian(45));
+	light[5].cosInner = cos(Math::DegreeToRadian(30));
+	light[5].exponent = 3.f;
+	light[5].spotDirection.Set(0.f, 1.f, 0.f);
+
     // Make sure you pass uniform parameters after glUseProgram()
     glUniform1i(m_parameters[U_LIGHT0_TYPE], light[0].type);
     glUniform3fv(m_parameters[U_LIGHT0_COLOR], 1, &light[0].color.r);
@@ -1023,17 +1063,51 @@ void Level2::Init()
     glUniform1f(m_parameters[U_LIGHT2_COSINNER], light[2].cosInner);
     glUniform1f(m_parameters[U_LIGHT2_EXPONENT], light[2].exponent);
 
-    // Make sure you pass uniform parameters after glUseProgram()
-    glUniform1i(m_parameters[U_NUMLIGHTS], 3);
+	glUniform1i(m_parameters[U_LIGHT3_TYPE], light[3].type);
+	glUniform3fv(m_parameters[U_LIGHT3_COLOR], 1, &light[3].color.r);
+	glUniform1f(m_parameters[U_LIGHT3_POWER], light[3].power);
+	glUniform1f(m_parameters[U_LIGHT3_KC], light[3].kC);
+	glUniform1f(m_parameters[U_LIGHT3_KL], light[3].kL);
+	glUniform1f(m_parameters[U_LIGHT3_KQ], light[3].kQ);
+	glUniform1f(m_parameters[U_LIGHT3_COSCUTOFF], light[3].cosCutoff);
+	glUniform1f(m_parameters[U_LIGHT3_COSINNER], light[3].cosInner);
+	glUniform1f(m_parameters[U_LIGHT3_EXPONENT], light[3].exponent);
+
+
+	glUniform1i(m_parameters[U_LIGHT4_TYPE], light[4].type);
+	glUniform3fv(m_parameters[U_LIGHT4_COLOR], 1, &light[4].color.r);
+	glUniform1f(m_parameters[U_LIGHT4_POWER], light[4].power);
+	glUniform1f(m_parameters[U_LIGHT4_KC], light[4].kC);
+	glUniform1f(m_parameters[U_LIGHT4_KL], light[4].kL);
+	glUniform1f(m_parameters[U_LIGHT4_KQ], light[4].kQ);
+	glUniform1f(m_parameters[U_LIGHT4_COSCUTOFF], light[4].cosCutoff);
+	glUniform1f(m_parameters[U_LIGHT4_COSINNER], light[4].cosInner);
+	glUniform1f(m_parameters[U_LIGHT4_EXPONENT], light[4].exponent);
+
+
+	glUniform1i(m_parameters[U_LIGHT5_TYPE], light[5].type);
+	glUniform3fv(m_parameters[U_LIGHT5_COLOR], 1, &light[5].color.r);
+	glUniform1f(m_parameters[U_LIGHT5_POWER], light[5].power);
+	glUniform1f(m_parameters[U_LIGHT5_KC], light[5].kC);
+	glUniform1f(m_parameters[U_LIGHT5_KL], light[5].kL);
+	glUniform1f(m_parameters[U_LIGHT5_KQ], light[5].kQ);
+	glUniform1f(m_parameters[U_LIGHT5_COSCUTOFF], light[5].cosCutoff);
+	glUniform1f(m_parameters[U_LIGHT5_COSINNER], light[5].cosInner);
+	glUniform1f(m_parameters[U_LIGHT5_EXPONENT], light[5].exponent);
+
+
+	// Make sure you pass uniform parameters after glUseProgram()
+	glUniform1i(m_parameters[U_NUMLIGHTS], 6);
 
 
     // Param 1 - name of sound ---- Param 2 -distance sound able to travel --- Param 3 - volume of sound (0 to 1)
     soundStorage.push_back(new Sound("gunshot.mp3", 1000, 1));
     soundStorage.push_back(new Sound("splatter.mp3", 1000, 1));
     soundStorage.push_back(new Sound("run.mp3", 1000, 0.5));
-    soundStorage.push_back(new Sound("backgroundmusic.mp3"));
+    soundStorage.push_back(new Sound("background2.mp3"));
     soundStorage.push_back(new Sound("jump.wav", 1000, 0.5));
-    soundStorage.push_back(new Sound("footstep.mp3", 1000, 1));
+	soundStorage.push_back(new Sound("footstep.mp3", 1000, 1));
+
 
     /* vec3df somePosition = { 0, 0,0};
     soundStorage[1]->play3DSound(true, false, false, somePosition);*/
@@ -1129,6 +1203,11 @@ void Level2::objectsInit()
 
 void Level2::Update(double dt)
 {
+	//Delay for placing objects
+	static float pressDelay = 0.f;
+	//Delay for footstep sound
+	static float pressDelay2 = 0.f;
+
     static float mouseStart = 0.f;
     mouseStart += float(dt);
     if (mouseStart > 5.f)
@@ -1136,6 +1215,28 @@ void Level2::Update(double dt)
         Camera3::loadedCheck(true);
     }
     Camera3::collisionSwitch(true, "Level2.txt");
+
+	for (auto it1 = enemyStorage.begin(); it1 != enemyStorage.end(); it1++)
+	{
+		if ((*(it1 + 1)) != NULL)
+		{
+			for (auto it2 = it1 + 1; it2 != enemyStorage.end(); it2++)
+			{
+				if (((*it1)->_Position - (*it2)->_Position).Length() < 20 &&
+					(*it1)->getState() != 2 && (*it2)->getState() != 2)
+				{
+
+					DistanceBetween = ((*it1)->_Position - (*it2)->_Position).Normalized();
+					(*it1)->_Position += DistanceBetween;
+					(*it2)->_Position -= DistanceBetween;
+
+				}
+
+			}
+		}
+	}
+
+
     vec3df camPos = { camera.getPosition().x, camera.getPosition().y, camera.getPosition().z };
     Vector3 view = camera.target - camera.position;
     vec3df dir = { view.x, view.y, view.z };
@@ -1226,15 +1327,15 @@ void Level2::Update(double dt)
 
     static bool canPress = true;
 
-    if (!Application::IsKeyPressed('Q'))
-        canPress = true;
+	if (!Application::IsKeyPressed(MK_RBUTTON))
+		canPress = true;
 
-    // Light on
-    if (canPress && Application::IsKeyPressed('Q')) {
-        light[0].power = (light[0].power > 0) ? 0.0f : 3.0f; // Toggle Power between 0 and 2
-        glUniform1f(m_parameters[U_LIGHT0_POWER], light[0].power);
-        canPress = false;
-    }
+	// Light on
+	if (canPress && Application::IsKeyPressed(MK_RBUTTON)) {
+		light[0].power = (light[0].power > 0) ? 0.0f : 3.0f; // Toggle Power between 0 and 2
+		glUniform1f(m_parameters[U_LIGHT0_POWER], light[0].power);
+		canPress = false;
+	}
     if (light[0].power > 0)
     {
         float ys = 10.f;
@@ -1267,8 +1368,7 @@ void Level2::Update(double dt)
 
     float run = 1.f;
 
-	pressDelay += (float)dt;
-	pressDelay2 += (float)dt;
+
 
     if (Application::IsKeyPressed(MK_LBUTTON))
     {
@@ -1377,13 +1477,8 @@ void Level2::Update(double dt)
 		pressDelay2 = 1.f;
 	}
 
-	if (Application::IsKeyPressed(VK_SHIFT))
-		isRunning = true;
-	else
-		isRunning = false;
 	
-	if (isRunning == false)
-	{
+	
 		if (Application::IsKeyPressed('W') && pressDelay2 >= 1.f)
 		{
 			pressDelay2 = 0.f;
@@ -1409,30 +1504,29 @@ void Level2::Update(double dt)
 			soundStorage[5]->play3DSound(false, false, true, footPos);
 		}
 		
-	}
-	if (isRunning == true)
-	{
-		if (Application::IsKeyPressed(VK_SHIFT) && Application::IsKeyPressed('W') && pressDelay >= cooldownPressed)
+	
+	
+		if (Application::IsKeyPressed(VK_SHIFT) && Application::IsKeyPressed('W') && pressDelay >= 0.5f)
 		{
 			pressDelay = 0.f;
 			soundStorage[2]->play3DSound(false, false, true, footPos);
 		}
-		if (Application::IsKeyPressed(VK_SHIFT) && Application::IsKeyPressed('A') && pressDelay >= cooldownPressed)
+		if (Application::IsKeyPressed(VK_SHIFT) && Application::IsKeyPressed('A') && pressDelay >= 0.5f)
 		{
 			pressDelay = 0.f;
 			soundStorage[2]->play3DSound(false, false, true, footPos);
 		}
-		if (Application::IsKeyPressed(VK_SHIFT) && Application::IsKeyPressed('S') && pressDelay >= cooldownPressed)
+		if (Application::IsKeyPressed(VK_SHIFT) && Application::IsKeyPressed('S') && pressDelay >= 0.5f)
 		{
 			pressDelay = 0.f;
 			soundStorage[2]->play3DSound(false, false, true, footPos);
 		}
-		if (Application::IsKeyPressed(VK_SHIFT) && Application::IsKeyPressed('D') && pressDelay >= cooldownPressed)
+		if (Application::IsKeyPressed(VK_SHIFT) && Application::IsKeyPressed('D') && pressDelay >= 0.5f)
 		{
 			pressDelay = 0.f;
 			soundStorage[2]->play3DSound(false, false, true, footPos);
 		}
-	}
+	
 
 	//soundStorage[2]->play3DSound(false, false, true, footPos);
 	
@@ -1483,63 +1577,30 @@ void Level2::enemyUpdate(double dt)
     {
         (*it)->update();
 
-        if ((*it)->enemytype == 2)
-		{
-			if ((*it)->getState() != Robot::robotState::death)
-			{
-				if (((*it)->_Position - camera.getPosition()).Length() < (*it)->getRange())
-				{
-					robotShoot = true;
-					broughtDown = false;
-
-				}
-				else
-				{
-
-				}
-
-				if (shootArmDown == false)
-				{
-					if (_elapsedTime >= nextRobotShoot)
-					{
-						objFactory.createFactoryObject(new Bullet(this, { (*it)->_Position.x, (*it)->_Position.y, (*it)->_Position.z }));
-						camera.health -= 10;
-						nextRobotShoot = _elapsedTime + coolDown;
-					}
-				}
-			}
-        }
-
-
+        
         for (vector<Object*>::iterator factoryIt = factoryIt = objFactory.Container.begin(); factoryIt != objFactory.Container.end(); factoryIt++)
         {
 			if ((*factoryIt)->type == Scene::GEO_LIGHTBALL3)   //BULLET INTERACTION WITH ENEMY
             {
                 if (((*factoryIt)->position_ - (*it)->_Position).Length() < 20 && bulletTouch == false)
                 {
-                    if ((*it)->enemytype == 1)
-                    {
-                        (*it)->_Hp -= 10;
-                        (*it)->healthBarSpider -= 2.f;
-                        damaged = true;
-                        bulletTouch = true;
+					if ((*it)->enemytype == 2)
+					{
+						(*it)->_Hp -= 10;
+						(*it)->healthBarRobot1 -= 5.f;
+						damaged = true;
+						bulletTouch = true;
 
-                        if ((*it)->_Hp <= 0)
-                        {
-                            (*it)->setState(2);  //  death is at enum 2
-                        }
-                    }
-                    if ((*it)->enemytype == 2)
-                    {
-                        (*it)->_Hp -= 10;
-                        (*it)->healthBarRobot1 -= 2.f;
-                        damaged = true;
-                        bulletTouch = true;
 
-                        if ((*it)->_Hp <= 0)
-                        {
-                            (*it)->setState(2);  //  death is at enum 2
-                        }
+						(*it)->_Hp -= 10;
+						(*it)->healthBarSpider -= 5.f;
+						damaged = true;
+						bulletTouch = true;
+
+						if ((*it)->_Hp <= 0)
+						{
+							(*it)->setState(2);  //  death is at enum 2
+						}
                     }
                 }
             }
@@ -1614,6 +1675,27 @@ void Level2::Render()
     }
 
 
+	if (light[3].type == Light::LIGHT_POINT)
+	{
+		Position lightPosition_cameraspace = viewStack.Top() * light[3].position;
+		glUniform3fv(m_parameters[U_LIGHT3_POSITION], 1, &lightPosition_cameraspace.x);
+	}
+
+
+	if (light[4].type == Light::LIGHT_POINT)
+	{
+		Position lightPosition_cameraspace = viewStack.Top() * light[4].position;
+		glUniform3fv(m_parameters[U_LIGHT4_POSITION], 1, &lightPosition_cameraspace.x);
+	}
+
+
+	if (light[5].type == Light::LIGHT_POINT)
+	{
+		Position lightPosition_cameraspace = viewStack.Top() * light[5].position;
+		glUniform3fv(m_parameters[U_LIGHT5_POSITION], 1, &lightPosition_cameraspace.x);
+	}
+
+
     //Generate Axes
     MVP = projectionStack.Top() * viewStack.Top() * modelStack.Top(); //Remember, matrix multiplication is the other way around
     glUniformMatrix4fv(m_parameters[U_MVP], 1, GL_FALSE, &MVP.a[0]);
@@ -1659,9 +1741,9 @@ void Level2::renderEnemy()
 
             camera.health--;
 
-            if ((*it)->enemytype == 1)
-            {
-                if (Math::RandIntMinMax(0, 100) < 10)
+			if ((*it)->enemytype == 2)
+			{
+                if (Math::RandIntMinMax(0, 100) <=50)
                 {
                     camera.poison = true;
                 }
@@ -1957,8 +2039,8 @@ void Level2::renderHUD()
         //Energy level of torch
         if (energy > 0)
         {
-			RenderMeshOnScreen(meshList[GEO_EN], static_cast<float>(5 + 11.3* energy / 10000), 2.3f, 
-				static_cast<float>(105 * energy / 10000), 9, 0.f, 0.f, 0.f, 1.f);
+			RenderMeshOnScreen(meshList[GEO_EN], static_cast<float>(5 + 11.3* energy / 1000), 2.3f, 
+				static_cast<float>(105 * energy / 1000), 9, 0.f, 0.f, 0.f, 1.f);
         }
         if (energy == 0)
         {
@@ -1966,8 +2048,8 @@ void Level2::renderHUD()
         }
         if (timeleft > 0)
         {
-			RenderMeshOnScreen(meshList[GEO_TIME], static_cast<float>(58.6 + 11.3* timeleft / 60000),
-				14.5, static_cast<float>(105 * timeleft / 60000), 11, 0.f, 0.f, 0.f, 1.f);
+			RenderMeshOnScreen(meshList[GEO_TIME], static_cast<float>(58.6 + 11.3* timeleft / 10800),
+				14.5, static_cast<float>(105 * timeleft / 10800), 11, 0.f, 0.f, 0.f, 1.f);
         }
         renderRemainingTime();
         //minimap
@@ -1977,8 +2059,8 @@ void Level2::renderHUD()
         for (vector<Enemy*>::iterator it = enemyStorage.begin(); it != enemyStorage.end(); it++)
         {
             if ((*it)->getState() != Robot::robotState::death || (*it)->getState() != Spider::spiderState::death)
-				RenderMeshOnScreen(meshList[GEO_MINI_ENEMY], static_cast<float>(10.5 + (((*it)->_Position.x / 10000) * 14))
-				, static_cast<float>(50 + (((*it)->_Position.z / 10000) * 14.4)), 10, 10, 0.f, 0.f, 0.f, 1.f);
+				RenderMeshOnScreen(meshList[GEO_MINI_ENEMY], static_cast<float>(10.5 + (((*it)->_Position.x / 3200) * 14))
+				, static_cast<float>(50 + (((*it)->_Position.z / 3200) * 14.4)), 10, 10, 0.f, 0.f, 0.f, 1.f);
         }
     }
 }
@@ -2224,7 +2306,7 @@ void Level2::renderGround()
 {
     modelStack.PushMatrix();
     modelStack.Translate(0.f, -30.f, 0.f);
-    modelStack.Scale(10000.f, 10000.f, 10000.f);
+    modelStack.Scale(3200.f, 3200.f, 3200.f);
     RenderMesh(meshList[GEO_GROUND], true);
     modelStack.PopMatrix();
 }

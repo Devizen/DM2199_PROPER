@@ -28,23 +28,10 @@ Camera3::~Camera3()
 }
 void cbMouseEvent(GLFWwindow* window, int button, int action, int mods) 
 {
-    // Toggle cursor on right click
-    if (button == GLFW_MOUSE_BUTTON_RIGHT && action == GLFW_RELEASE)
-    {
-        if (glfwGetInputMode(window, GLFW_CURSOR) == GLFW_CURSOR_NORMAL)
-        {
-            glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED); // Hide cursor
-        }
-        else
-        {
-            glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL); // Show Cursor
-            // Reset the cursor to middle
-            int w, h;
-            glfwGetWindowSize(window, &w, &h);
-            glfwSetCursorPos(window, (double)w / 2, (double)h / 2);
-        }
-    }
-    
+	if (glfwGetInputMode(window, GLFW_CURSOR) == GLFW_CURSOR_NORMAL)
+	{
+		glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED); // Hide cursor
+	}
 }
 
 void Camera3::Init(const Vector3& pos, const Vector3& target, const Vector3& up)

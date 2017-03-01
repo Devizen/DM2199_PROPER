@@ -255,6 +255,60 @@ public:
         U_LIGHT3_COSINNER,
         U_LIGHT3_EXPONENT,
 
+		U_LIGHT4_POSITION,
+		U_LIGHT4_COLOR,
+		U_LIGHT4_POWER,
+		U_LIGHT4_KC,
+		U_LIGHT4_KL,
+		U_LIGHT4_KQ,
+
+		U_LIGHT4_TYPE,
+		U_LIGHT4_SPOTDIRECTION,
+		U_LIGHT4_COSCUTOFF,
+		U_LIGHT4_COSINNER,
+		U_LIGHT4_EXPONENT,
+
+
+		U_LIGHT5_POSITION,
+		U_LIGHT5_COLOR,
+		U_LIGHT5_POWER,
+		U_LIGHT5_KC,
+		U_LIGHT5_KL,
+		U_LIGHT5_KQ,
+
+		U_LIGHT5_TYPE,
+		U_LIGHT5_SPOTDIRECTION,
+		U_LIGHT5_COSCUTOFF,
+		U_LIGHT5_COSINNER,
+		U_LIGHT5_EXPONENT,
+
+
+		U_LIGHT6_POSITION,
+		U_LIGHT6_COLOR,
+		U_LIGHT6_POWER,
+		U_LIGHT6_KC,
+		U_LIGHT6_KL,
+		U_LIGHT6_KQ,
+
+		U_LIGHT6_TYPE,
+		U_LIGHT6_SPOTDIRECTION,
+		U_LIGHT6_COSCUTOFF,
+		U_LIGHT6_COSINNER,
+		U_LIGHT6_EXPONENT,
+
+		U_LIGHT7_POSITION,
+		U_LIGHT7_COLOR,
+		U_LIGHT7_POWER,
+		U_LIGHT7_KC,
+		U_LIGHT7_KL,
+		U_LIGHT7_KQ,
+
+		U_LIGHT7_TYPE,
+		U_LIGHT7_SPOTDIRECTION,
+		U_LIGHT7_COSCUTOFF,
+		U_LIGHT7_COSINNER,
+		U_LIGHT7_EXPONENT,
+
         U_LIGHTENABLED,
         U_NUMLIGHTS,
 
@@ -379,21 +433,11 @@ protected:
     float nextPotion = 0.f;
     float nextRobotShoot = 0.f;
 
-    //Energy / Time
-    int energy = 10000;
-    int timeleft = 60000;
-    int maxenergy = energy;
-    int maxtime = timeleft;
-
-    //Delay for placing objects
-    float pressDelay = 0.f;
-    //Delay for footstep sound
-    float pressDelay2 = 0.f;
-
-    bool isRunning = false;
-
+  
     // Cool Down Time
     const float coolDown = 0.25f;
+
+	Vector3 DistanceBetween;
 
 
 };

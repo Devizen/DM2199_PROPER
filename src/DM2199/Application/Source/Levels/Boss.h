@@ -160,6 +160,16 @@ private:
 
     //Render objects.
     void renderObjects();
+
+	//Energy / Time   // 10000 ,60000
+	int energy = 1000;
+	//60 1 sec 
+	int timeleft = 10800;
+	int maxenergy = energy;
+	int maxtime = timeleft;
+
+	float offSetX = 0.f;
+	float offSetZ = 0.f;
 };
 
 #endif
