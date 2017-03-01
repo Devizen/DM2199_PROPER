@@ -1,0 +1,1077 @@
+--Object--
+201,0
+Image//tombstone.tga
+OBJ//tombstone90.obj
+--Object End--
+--Object--
+201,-61
+Image//tombstone.tga
+OBJ//tombstone90.obj
+--Object End--
+--Object--
+201,60
+Image//tombstone.tga
+OBJ//tombstone90.obj
+--Object End--
+--Object--
+149,-85
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+88,-84
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+27,-84
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+-38,-84
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+-59,-33
+Image//tombstone.tga
+OBJ//tombstone270.obj
+--Object End--
+--Object--
+-56,28
+Image//tombstone.tga
+OBJ//tombstone270.obj
+--Object End--
+--Object--
+-53,92
+Image//tombstone.tga
+OBJ//tombstone270.obj
+--Object End--
+--Object--
+-50,156
+Image//tombstone.tga
+OBJ//tombstone270.obj
+--Object End--
+--Object--
+2,162
+Image//tombstone.tga
+OBJ//tombstone.obj
+--Object End--
+--Object--
+62,158
+Image//tombstone.tga
+OBJ//tombstone.obj
+--Object End--
+--Object--
+124,154
+Image//tombstone.tga
+OBJ//tombstone.obj
+--Object End--
+--Object--
+185,150
+Image//tombstone.tga
+OBJ//tombstone.obj
+--Object End--
+--Object--
+235,114
+Image//statue1.tga
+OBJ//statue190.obj
+--Object End--
+--Object--
+226,196
+Image//statue2.tga
+OBJ//statue2180.obj
+--Object End--
+--Object--
+287,58
+Image//tombstone.tga
+OBJ//tombstone90.obj
+--Object End--
+--Object--
+282,-10
+Image//tombstone.tga
+OBJ//tombstone90.obj
+--Object End--
+--Object--
+277,-74
+Image//tombstone.tga
+OBJ//tombstone90.obj
+--Object End--
+--Object--
+285,124
+Image//tombstone.tga
+OBJ//tombstone90.obj
+--Object End--
+--Object--
+287,188
+Image//tombstone.tga
+OBJ//tombstone90.obj
+--Object End--
+--Object--
+287,-144
+Image//statue2.tga
+OBJ//statue2270.obj
+--Object End--
+--Object--
+229,-184
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+165,-185
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+102,-185
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+37,-185
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+-25,-185
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+-86,-186
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+-148,-186
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+-106,-83
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+-180,-83
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+-93,-2
+Image//lamp.tga
+OBJ//lamp180.obj
+--Object End--
+--Object--
+-129,-10
+Image//tree.tga
+OBJ//tree180.obj
+--Object End--
+--Object--
+-171,31
+Image//tree.tga
+OBJ//tree180.obj
+--Object End--
+--Object--
+-156,64
+Image//tree.tga
+OBJ//tree180.obj
+--Object End--
+--Object--
+-142,97
+Image//tree.tga
+OBJ//tree180.obj
+--Object End--
+--Object--
+-138,133
+Image//tree.tga
+OBJ//tree180.obj
+--Object End--
+--Object--
+-140,166
+Image//tree.tga
+OBJ//tree180.obj
+--Object End--
+--Object--
+-122,196
+Image//tree.tga
+OBJ//tree180.obj
+--Object End--
+--Object--
+-126,253
+Image//tree.tga
+OBJ//tree180.obj
+--Object End--
+--Object--
+-61,260
+Image//tree.tga
+OBJ//tree180.obj
+--Object End--
+--Object--
+-43,319
+Image//tree.tga
+OBJ//tree180.obj
+--Object End--
+--Object--
+-6,273
+Image//tree.tga
+OBJ//tree180.obj
+--Object End--
+--Object--
+62,278
+Image//tree.tga
+OBJ//tree180.obj
+--Object End--
+--Object--
+118,316
+Image//tree.tga
+OBJ//tree180.obj
+--Object End--
+--Object--
+128,251
+Image//tree.tga
+OBJ//tree180.obj
+--Object End--
+--Object--
+58,237
+Image//tree.tga
+OBJ//tree180.obj
+--Object End--
+--Object--
+-233,-96
+Image//tombstone.tga
+OBJ//tombstone270.obj
+--Object End--
+--Object--
+-277,-142
+Image//tombstone.tga
+OBJ//tombstone270.obj
+--Object End--
+--Object--
+-277,-202
+Image//tombstone.tga
+OBJ//tombstone270.obj
+--Object End--
+--Object--
+-225,-281
+Image//objects.tga
+OBJ//mountain180.obj
+--Object End--
+--Object--
+-81,-287
+Image//objects.tga
+OBJ//mountain180.obj
+--Object End--
+--Object--
+62,-293
+Image//objects.tga
+OBJ//mountain180.obj
+--Object End--
+--Object--
+204,-298
+Image//objects.tga
+OBJ//mountain180.obj
+--Object End--
+--Object--
+346,-304
+Image//objects.tga
+OBJ//mountain180.obj
+--Object End--
+--Object--
+-152,-341
+Image//statue1.tga
+OBJ//statue1180.obj
+--Object End--
+--Object--
+-8,-346
+Image//statue1.tga
+OBJ//statue1180.obj
+--Object End--
+--Object--
+133,-351
+Image//statue1.tga
+OBJ//statue1180.obj
+--Object End--
+--Object--
+278,-356
+Image//statue1.tga
+OBJ//statue1180.obj
+--Object End--
+--Object--
+394,-222
+Image//statue2.tga
+OBJ//statue2270.obj
+--Object End--
+--Object--
+395,-178
+Image//statue2.tga
+OBJ//statue2270.obj
+--Object End--
+--Object--
+395,-138
+Image//statue2.tga
+OBJ//statue2270.obj
+--Object End--
+--Object--
+396,-95
+Image//statue2.tga
+OBJ//statue2270.obj
+--Object End--
+--Object--
+397,-8
+Image//statue2.tga
+OBJ//statue2270.obj
+--Object End--
+--Object--
+472,138
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+422,169
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+481,253
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+420,299
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+345,304
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+394,371
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+498,343
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+312,308
+Image//tombstone.tga
+OBJ//tombstone.obj
+--Object End--
+--Object--
+259,306
+Image//tombstone.tga
+OBJ//tombstone.obj
+--Object End--
+--Object--
+203,308
+Image//tombstone.tga
+OBJ//tombstone.obj
+--Object End--
+--Object--
+443,-13
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+432,-59
+Image//tombstone.tga
+OBJ//tombstone90.obj
+--Object End--
+--Object--
+457,52
+Image//tombstone.tga
+OBJ//tombstone90.obj
+--Object End--
+--Object--
+457,122
+Image//tombstone.tga
+OBJ//tombstone90.obj
+--Object End--
+--Object--
+457,199
+Image//tombstone.tga
+OBJ//tombstone90.obj
+--Object End--
+--Object--
+468,248
+Image//lamp.tga
+OBJ//lamp180.obj
+--Object End--
+--Object--
+457,321
+Image//tree.tga
+OBJ//tree180.obj
+--Object End--
+--Object--
+365,388
+Image//tree.tga
+OBJ//tree180.obj
+--Object End--
+--Object--
+374,330
+Image//tree.tga
+OBJ//tree180.obj
+--Object End--
+--Object--
+150,306
+Image//tombstone.tga
+OBJ//tombstone.obj
+--Object End--
+--Object--
+94,309
+Image//tombstone.tga
+OBJ//tombstone.obj
+--Object End--
+--Object--
+39,312
+Image//tombstone.tga
+OBJ//tombstone.obj
+--Object End--
+--Object--
+-18,315
+Image//tombstone.tga
+OBJ//tombstone.obj
+--Object End--
+--Object--
+-72,313
+Image//tombstone.tga
+OBJ//tombstone.obj
+--Object End--
+--Object--
+-128,316
+Image//tombstone.tga
+OBJ//tombstone.obj
+--Object End--
+--Object--
+402,335
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+446,327
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+-177,289
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+-226,252
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+-171,136
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+-193,203
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+-295,178
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+-253,132
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+-233,53
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+-299,55
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+-229,-17
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+-308,-27
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+-343,115
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+-361,192
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+-306,270
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+-394,231
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+-427,155
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+-446,64
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+-417,8
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+-369,-29
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+-318,-105
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+-404,-98
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+-466,-64
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+-376,113
+Image//lantern.tga
+OBJ//lantern.obj
+--Object End--
+--Object--
+-187,358
+Image//tombstone.tga
+OBJ//tombstone.obj
+--Object End--
+--Object--
+-235,352
+Image//tombstone.tga
+OBJ//tombstone.obj
+--Object End--
+--Object--
+-286,346
+Image//tombstone.tga
+OBJ//tombstone.obj
+--Object End--
+--Object--
+-334,340
+Image//tombstone.tga
+OBJ//tombstone.obj
+--Object End--
+--Object--
+-385,334
+Image//tombstone.tga
+OBJ//tombstone.obj
+--Object End--
+--Object--
+-434,330
+Image//tombstone.tga
+OBJ//tombstone.obj
+--Object End--
+--Object--
+-473,295
+Image//tombstone.tga
+OBJ//tombstone270.obj
+--Object End--
+--Object--
+-474,241
+Image//tombstone.tga
+OBJ//tombstone270.obj
+--Object End--
+--Object--
+-474,183
+Image//tombstone.tga
+OBJ//tombstone270.obj
+--Object End--
+--Object--
+-475,128
+Image//tombstone.tga
+OBJ//tombstone270.obj
+--Object End--
+--Object--
+-476,72
+Image//tombstone.tga
+OBJ//tombstone270.obj
+--Object End--
+--Object--
+-477,16
+Image//tombstone.tga
+OBJ//tombstone270.obj
+--Object End--
+--Object--
+-469,-24
+Image//tree.tga
+OBJ//tree270.obj
+--Object End--
+--Object--
+-469,-83
+Image//tombstone.tga
+OBJ//tombstone270.obj
+--Object End--
+--Object--
+-467,-135
+Image//tombstone.tga
+OBJ//tombstone270.obj
+--Object End--
+--Object--
+-465,-190
+Image//tombstone.tga
+OBJ//tombstone270.obj
+--Object End--
+--Object--
+-463,-247
+Image//tombstone.tga
+OBJ//tombstone270.obj
+--Object End--
+--Object--
+-461,-301
+Image//tombstone.tga
+OBJ//tombstone270.obj
+--Object End--
+--Object--
+-459,-354
+Image//tombstone.tga
+OBJ//tombstone270.obj
+--Object End--
+--Object--
+-457,-409
+Image//tombstone.tga
+OBJ//tombstone270.obj
+--Object End--
+--Object--
+-454,-465
+Image//tombstone.tga
+OBJ//tombstone270.obj
+--Object End--
+--Object--
+-332,-170
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+-406,-250
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+-328,-337
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+-271,-395
+Image//tombstone.tga
+OBJ//tombstone90.obj
+--Object End--
+--Object--
+-340,-399
+Image//tombstone.tga
+OBJ//tombstone90.obj
+--Object End--
+--Object--
+-419,-524
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+-336,-522
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+-283,-520
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+-227,-518
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+-171,-516
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+-116,-515
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+-60,-513
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+-6,-511
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+50,-509
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+106,-508
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+163,-506
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+218,-504
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+275,-502
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+332,-500
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+391,-498
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+445,-497
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+503,-495
+Image//tombstone.tga
+OBJ//tombstone180.obj
+--Object End--
+--Object--
+437,-332
+Image//tombstone.tga
+OBJ//tombstone.obj
+--Object End--
+--Object--
+491,-333
+Image//tombstone.tga
+OBJ//tombstone.obj
+--Object End--
+--Object--
+538,-369
+Image//tombstone.tga
+OBJ//tombstone90.obj
+--Object End--
+--Object--
+539,-424
+Image//tombstone.tga
+OBJ//tombstone90.obj
+--Object End--
+--Object--
+541,-480
+Image//tombstone.tga
+OBJ//tombstone90.obj
+--Object End--
+--Object--
+-375,-540
+Image//statue1.tga
+OBJ//statue1180.obj
+--Object End--
+--Object--
+-117,-466
+Image//statue2.tga
+OBJ//statue2270.obj
+--Object End--
+--Object--
+-113,-354
+Image//statue2.tga
+OBJ//statue2270.obj
+--Object End--
+--Object--
+94,-373
+Image//statue1.tga
+OBJ//statue1270.obj
+--Object End--
+--Object--
+77,-452
+Image//statue1.tga
+OBJ//statue1270.obj
+--Object End--
+--Object--
+197,-443
+Image//statue1.tga
+OBJ//statue1270.obj
+--Object End--
+--Object--
+331,-463
+Image//statue1.tga
+OBJ//statue1270.obj
+--Object End--
+--Object--
+333,-407
+Image//statue1.tga
+OBJ//statue1270.obj
+--Object End--
+--Object--
+434,-388
+Image//statue1.tga
+OBJ//statue1270.obj
+--Object End--
+--Object--
+465,-415
+Image//tombstone.tga
+OBJ//tombstone90.obj
+--Object End--
+--Object--
+219,138
+Image//statue1.tga
+OBJ//statue1.obj
+--Object End--
+--Object--
+-258,-109
+Image//statue1.tga
+OBJ//statue1.obj
+--Object End--
+--Object--
+-157,-59
+Image//statue1.tga
+OBJ//statue1.obj
+--Object End--
+--Object--
+-210,-61
+Image//statue1.tga
+OBJ//statue1.obj
+--Object End--
+--Object--
+491,203
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+504,234
+Image//tombstone.tga
+OBJ//tombstone90.obj
+--Object End--
+--Object--
+505,292
+Image//tombstone.tga
+OBJ//tombstone90.obj
+--Object End--
+--Object--
+505,348
+Image//tombstone.tga
+OBJ//tombstone90.obj
+--Object End--
+--Object--
+488,406
+Image//tombstone.tga
+OBJ//tombstone.obj
+--Object End--
+--Object--
+436,402
+Image//tombstone.tga
+OBJ//tombstone.obj
+--Object End--
+--Object--
+482,15
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+483,86
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Object--
+489,161
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
+--Enemy--
+Robot,100,1,30,80,5
+1
+265,157
+--Enemy End--
+--Enemy--
+Robot,100,1,30,80,5
+1
+267,81
+--Enemy End--
+--Enemy--
+Robot,100,1,30,80,5
+1
+226,-32
+--Enemy End--
+--Enemy--
+Robot,100,1,30,80,5
+1
+180,-110
+--Enemy End--
+--Enemy--
+Robot,100,1,30,80,5
+1
+120,-110
+--Enemy End--
+--Enemy--
+Robot,100,1,30,80,5
+1
+60,-110
+--Enemy End--
+--Enemy--
+Robot,100,1,30,80,5
+1
+0,-110
+--Enemy End--
+--Enemy--
+Robot,100,1,30,80,5
+1
+-86,-67
+--Enemy End--
+--Enemy--
+Robot,100,1,30,80,5
+1
+-86,-3
+--Enemy End--
+--Enemy--
+Robot,100,1,30,80,5
+1
+-87,61
+--Enemy End--
+--Enemy--
+Robot,100,1,30,80,5
+1
+-30,190
+--Enemy End--
+--Enemy--
+Robot,100,1,30,80,5
+1
+30,190
+--Enemy End--
+--Enemy--
+Robot,100,1,30,80,5
+1
+90,190
+--Enemy End--
+--Enemy--
+Robot,100,1,30,80,5
+1
+150,190
+--Enemy End--
+--Enemy--
+Robot,100,1,30,100,1
+1
+408,-61
+--Enemy End--
+--Enemy--
+Robot,100,1,30,100,1
+2
+332,104
+438,105
+--Enemy End--
+--Enemy--
+Robot,100,1,30,100,1
+2
+440,257
+346,256
+--Enemy End--
+--Enemy--
+Robot,100,1,30,80,5
+1
+-148,270
+--Enemy End--
+--Enemy--
+Robot,100,1,30,80,5
+1
+135,278
+--Enemy End--
+--Enemy--
+Robot,100,1,30,80,5
+1
+-249,95
+--Enemy End--
+--Enemy--
+Robot,100,1,30,80,5
+1
+-331,5
+--Enemy End--
+--Enemy--
+Robot,100,1,30,80,5
+1
+-311,-51
+--Enemy End--
+--Enemy--
+Robot,100,1,30,80,5
+1
+-349,173
+--Enemy End--
+--Enemy--
+Robot,100,1,30,80,5
+1
+-279,233
+--Enemy End--
+--Enemy--
+Robot,100,1,30,80,5
+1
+-439,-60
+--Enemy End--
+--Enemy--
+Robot,100,1,30,100,1
+1
+-309,-433
+--Enemy End--
+--Enemy--
+Robot,100,1,30,100,1
+1
+-56,-471
+--Enemy End--
+--Enemy--
+Robot,100,1,30,80,5
+1
+190,-379
+--Enemy End--
+--Enemy--
+Robot,100,1,30,80,5
+1
+250,-436
+--Enemy End--
+--Enemy--
+Robot,100,1,30,100,1
+1
+506,-418
+--Enemy End--

@@ -1,0 +1,40 @@
+--Object--
+-2,-76
+Image//objects.tga
+OBJ//mountain.obj
+--Object End--
+--Object--
+-149,-82
+Image//objects.tga
+OBJ//mountain.obj
+--Object End--
+--Object--
+-232,-108
+Image//lamp.tga
+OBJ//lamp.obj
+--Object End--
+--Object--
+-256,-104
+Image//lamp.tga
+OBJ//lamp.obj
+--Object End--
+--Object--
+-277,-99
+Image//lamp.tga
+OBJ//lamp.obj
+--Object End--
+--Object--
+-246,-75
+Image//lamp.tga
+OBJ//lamp.obj
+--Object End--
+--Object--
+-247,-134
+Image//lamp.tga
+OBJ//lamp.obj
+--Object End--
+--Object--
+-235,-53
+Image//lamp.tga
+OBJ//lamp.obj
+--Object End--

@@ -1,0 +1,5 @@
+--Object--
+-3,-13
+Image//tree.tga
+OBJ//tree.obj
+--Object End--
